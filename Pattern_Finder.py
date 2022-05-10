@@ -137,3 +137,27 @@ def plotBEChart(ogDF, apDF):
     style = 'yahoo',
     addplot = aps
     )
+
+"""
+#Sample main method
+def main():
+    print("Enter the symbol:", end = " ")
+    symb = str(input())    
+    print("Enter the interval:", end = " ")
+    intrvl = str(input())
+    print("[0] for Shooting Star")
+    print("[1] for Bullish Engulf")
+    print("Enter the patter:", end = " ")
+    pattern = input()
+    
+    parameters = {'symbol': symb, 'interval':intrvl}
+    df = getKlineData(parameters)
+    
+    ssdf = getShootingStarDataFrame(df)
+    plotSSChart(df,ssdf)
+    
+    bedf = getBullishEngulfDataFrame(df)
+    plotBEChart(df, bedf)
+ 
+main()
+"""
